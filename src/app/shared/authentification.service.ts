@@ -27,6 +27,7 @@ export class AuthentificationService {
         if (token) {
           this.token = token;
           window.alert("Successfully logged");
+          localStorage.setItem('token',token);
           return true;
         }
         else {

@@ -14,16 +14,13 @@ import { AuthentificationService } from './shared/authentification.service';
 import { RegisterComponent } from './register/register.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { RegisterService } from './shared/register.service';
+
 const appRoutes: Routes = [
   {
     path: '',
-    component: WelcomeComponent
-  },
-  {
-    path: 'login',
     component: LoginComponent
   },
-   {
+  {
     path: 'register',
     component: RegisterComponent
   },
